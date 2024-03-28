@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyansh Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* css reset */
+        body{
+                font-family: "Bangers", system-ui;
+                font-weight: 400;
+                font-style: normal;
+                margin : 0px;
+                padding : 0px;
+                background: url('img/man.jpg');
+                color: white;
+        }
+        .left{
+                display: inline-block;
+                /* border: 2px solid red; */
+                position: absolute;
+                left: 60px;
+                top: 20px;
+                text-align: center;
+                
+        }
+        .left img{
+                width: 100px;
+                filter: invert(100%);
+                
+        }
+        .left div{
+                line-height: 19px;
+                font-size: 26px;
+                text-align: center;
+        }
+        .mid{
+                display: block;
+                width: 30%;
+                margin: 29px auto;
+                /* border: 2px solid green; */
+        }
+        .right{
+                position: absolute;
+                right: 34px;
+                top: 33px;
+                display: inline-block;
+                /* border: 2px solid yellow; */
+        }
+        .navbar{
+                /* background-color: #333; */
+                display: inline-block;
+        }
+        .navbar li{
+                display: inline-block;
+        }
+        .navbar li a{
+                color: white;
+                display: inline-block;
+                text-decoration: none;
+                margin: 5px;
+                font-size: 20px;
+        
+        }
+        .navbar li a:hover,.navbar li a :active{
+              text-decoration: underline;
+              color: gray;
+        
+        }
+        .btn{
+                font-family: "Bangers", system-ui;
+                margin: 0px 9px;
+                background-color: black;
+                color: white;
+                padding: 4px 14px;
+                border: 2px solid rgb(82, 81, 81);
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+        }
+        .btn:hover{
+                background-color: rgb(34, 33, 33);
+        }
+        .container{
+                /* border: 2px solid green; */
+                margin: 102px 9px;
+                padding: 38px ;
+                width : 45%;
+                height: 100vh;
+                border-radius: 28px;
+        }
+        .form-group input{
+                font-family: "Bangers", system-ui;
+                text-align: center;
+                display: block;
+                width: 508px;
+                padding: 1px;
+                border: 2px solid black;
+                margin: 11px auto;
+                font-size: 25px;
+                border-radius: 8px;
+        }
+        .container h1{
+                color:;
+                text-align: center;
+        }
+        .container button{
+                display: block;
+                width: 85%;
+                margin: auto;
+        }
+        ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    li {
+        /* display: inline-block; */
+        margin-right: 10px; /* Adjust as needed */
+    }
+    li a {
+        text-decoration: none;
+        color: black; /* Change the color as needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     li a i {
+        margin-right: 5px; 
+    } 
+        /* .footer{
+                display: inline-block;
+        }
+        .footer li{
+                display: inline-block;
+        }
+        .footer li a{
+                color: white;
+                display: inline-block;
+                text-decoration: none;
+                margin: 5px;
+                font-size: 20px;
+        } */
+
+        /* .footer {  */
+    /* /background-color: #333; */ 
+    /* color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}  */
+.footer {
+
+        width: 100vw;
+        height: 28%;
+        position: fixed;
+        bottom: 0%;
+        background-color: black;
+        color: #fff;
+        
+    
+}
+
+.footer-content {
+        position: absolute;
+        top: 18%;
+        display: flex;
+        justify-content: space-around;
+    
+    
+}
+
+.footer h3 {
+    color: #fff;
+}
+
+.footer p {
+    color: #ccc;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box logo -->
+        <div class="left">
+                <img src="img/weight-1399281_1280.png" alt="">
+                <div>Priyansh Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+                <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">Fitness calculator</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+                <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>What Are you waiting for!!!join the best Gym of Ahmedabad Now!!</h1>
+        <form action="noaction.php">
+                <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                        <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+             
+                <button class="btn">Submit</button>
+        </form>
+    </div>
+  
+
+</div>
+<!-- <div class="footer">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </div> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@priyanshfitness.com</p>
+                    <p>Phone: 07927561250</p>
+                    <p>Address: 123 Gym Street,Ahmedabad,Gujarat,India</p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    
+                       <ul>
+                        <!-- <a href="#"><i class="fa fa-pinterest"></i></a> -->
+                        <li><a href="#">Facebook<i style="font-size:24px" class="fa">&#xf082;</i></a></li>
+                        <li><a href="#">Twitter<i style="font-size:24px" class="fa">&#xf099;</i></a></li>
+                        <li><a href="#">Instagram<i style="font-size:24px" class="fa">&#xf16d;</i></a></li>
+                        </ul> 
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
